@@ -1,0 +1,16 @@
+/* Update the paths to the fonts */
+@font-face {
+    font-family: 'DM Sans';
+    src: url('/fonts/dm-sans-latin-400-normal.woff2') format('woff2'),
+         url('/fonts/dm-sans-latin-400-normal.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('/fonts/dm-sans-latin-700-normal.woff2') format('woff2'),
+         url('/fonts/dm-sans-latin-700-normal.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}

@@ -1,0 +1,108 @@
+/* Importing fonts */
+/* @import '@fontsource/dm-sans/400.css';
+@import '@fontsource/dm-sans/700.css'; */
+
+/* @import url('/fonts/index.css'); */
+
+
+
+body, html {
+  font-family: 'DM Sans', Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+.page-break {
+  page-break-before: always;
+}
+
+/* Custom classes */
+.font-dm-sans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.custom-padding {
+  @apply p-custom-padding;
+}
+
+.custom-pt {
+  @apply pt-custom-pt;
+}
+
+.page-break {
+  page-break-after: always;
+}
+
+.custom-border {
+  border-width: 0.56px;
+  border-color: #a1a1a1;
+}
+
+.p-custom-padding {
+  padding: 12px;
+}
+
+.pt-custom-pt {
+  padding-top: 3px;
+}
+
+/* General styles */
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Print styles */
+@media print {
+  .custom-padding {
+    padding: 0 !important;
+  }
+  .custom-pt {
+    padding-top: 0 !important;
+  }
+
+  .pdf-page {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    page-break-after: always;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .avoid-break-inside {
+    page-break-inside: avoid;
+  }
+
+  #contact-information-anchor {
+    page-break-before: always;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+/* Specific component styles */
+#gauge-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#credit-enquiries {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#credit-enquiries > .flex-grow {
+  flex-grow: 1;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
